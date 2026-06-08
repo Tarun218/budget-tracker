@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 /**
  * Custom hook for managing localStorage
@@ -50,11 +50,6 @@ export const useLocalStorage = (key, initialValue) => {
  */
 export const useTransactions = (initialTransactions = []) => {
   const [transactions, setTransactions] = useLocalStorage('budget_tracker_transactions', initialTransactions);
-  const [filteredTransactions, setFilteredTransactions] = useState(transactions);
-
-  useEffect(() => {
-    setFilteredTransactions(transactions);
-  }, [transactions]);
 
   // Add a new transaction
   const addTransaction = (transaction) => {
@@ -80,16 +75,7 @@ export const useTransactions = (initialTransactions = []) => {
     setTransactions(transactions.filter((t) => t.id !== id));
   };
 
-  // Filter transactions
-  const filterTransactions = (filterFn) => {
-    const filtered = transactions.filter(filterFn);
-    setFilteredTransactions(filtered);
-  };
 
-  // Reset filters
-  const resetFilters = () => {
-    setFilteredTransactions(transactions);
-  };
 
   // Export to CSV
   const exportToCSV = () => {
@@ -128,12 +114,9 @@ export const useTransactions = (initialTransactions = []) => {
 
   return {
     transactions,
-    filteredTransactions,
     addTransaction,
     updateTransaction,
     deleteTransaction,
-    filterTransactions,
-    resetFilters,
     exportToCSV,
   };
 };

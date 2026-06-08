@@ -1,4 +1,4 @@
-import { format, parse, startOfMonth, endOfMonth, differenceInDays } from 'date-fns';
+import { format, differenceInDays, startOfMonth, endOfMonth } from 'date-fns';
 
 /**
  * Format date to readable string
@@ -10,7 +10,7 @@ export const formatDate = (date, formatStr = 'MMM dd, yyyy') => {
   try {
     const dateObj = typeof date === 'string' ? new Date(date) : date;
     return format(dateObj, formatStr);
-  } catch (error) {
+  } catch {
     return 'Invalid date';
   }
 };
@@ -24,7 +24,7 @@ export const formatDateForInput = (date) => {
   try {
     const dateObj = typeof date === 'string' ? new Date(date) : date;
     return format(dateObj, 'yyyy-MM-dd');
-  } catch (error) {
+  } catch {
     return format(new Date(), 'yyyy-MM-dd');
   }
 };
@@ -38,10 +38,10 @@ export const getMonthYear = (date) => {
   try {
     const dateObj = typeof date === 'string' ? new Date(date) : date;
     return format(dateObj, 'MMMM yyyy');
-  } catch (error) {
+  } catch {
     return 'Invalid date';
   }
-};
+}
 
 /**
  * Get month name

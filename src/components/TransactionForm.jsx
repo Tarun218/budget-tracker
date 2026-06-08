@@ -117,12 +117,7 @@ export default function TransactionForm({
           <h2 className="text-2xl font-bold text-black font-serif">
             {initialData ? 'Edit Transaction' : 'New Transaction'}
           </h2>
-          <button
-            onClick={onCancel}
-            className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
-          >
-            <X className="w-5 h-5 text-[#666666]" />
-          </button>
+        
         </div>
 
         <form onSubmit={handleSubmit} className="p-6 space-y-4">
@@ -231,6 +226,7 @@ export default function TransactionForm({
               onClick={onCancel}
               className="flex-1 px-4 py-2 border-2 border-[#D9D9D9] rounded-lg text-black font-medium hover:bg-gray-50 transition-colors"
             >
+<X className="w-5 h-5 text-[#666666]" />
               Cancel
             </button>
             <button

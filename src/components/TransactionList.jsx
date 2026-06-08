@@ -11,7 +11,6 @@ export default function TransactionList({
   transactions = [],
   onEdit,
   onDelete,
-  onFilterChange,
 }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [filterType, setFilterType] = useState('all');

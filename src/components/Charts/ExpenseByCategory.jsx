@@ -2,7 +2,7 @@
  * ExpenseByCategory component
  * Bar chart showing expenses by category
  */
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Cell } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 import { CATEGORY_COLORS } from '../../utils/sampleData';
 
 export default function ExpenseByCategory({ data }) {
