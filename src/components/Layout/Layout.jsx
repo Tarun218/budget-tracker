@@ -17,6 +17,7 @@ export default function Layout({ children, activeTab, onTabChange }) {
       <div className="relative z-10">
         <Header />
 
+<Navigation activeTab={activeTab} onTabChange={onTabChange} />
         <main className="min-h-[calc(100vh-120px)]">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
@@ -27,7 +28,6 @@ export default function Layout({ children, activeTab, onTabChange }) {
           </motion.div>
         </main>
 
-        <Navigation activeTab={activeTab} onTabChange={onTabChange} />
       </div>
     </div>
   );

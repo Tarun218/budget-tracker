@@ -10,9 +10,9 @@ export default function Navigation({ activeTab, onTabChange }) {
   ];
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-white bg-opacity-[0.02] backdrop-blur-sm border-t border-[#D9D9D9]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-around">
+    <div className="fixed bottom-0 left-0 right-0 bg-white bg-opacity-[0.02] backdrop-blur-sm border-t border-[#D9D9D9]" style={{display:'flex', justifyContent:'right', alignItems:'center', padding:'10px 0'}}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" >
+        <div className="flex justify-around" >
           {tabs.map((tab) => {
             const Icon = tab.icon;
             const isActive = activeTab === tab.id;
