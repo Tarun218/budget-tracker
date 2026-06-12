@@ -30,28 +30,28 @@ Budget Tracker is a web-based personal finance management tool that helps you tr
 
 ### Dashboard Overview
 View your complete financial snapshot with summary cards and interactive charts.
+<img width="1885" height="917" alt="Screenshot 2026-06-12 130002" src="https://github.com/user-attachments/assets/e16ed48c-0b41-4b97-8c61-3aa5bc4c01b7" />
 
-[Dashboard Screenshot - Summary Cards and Charts]
 
 ### Dashboard Charts
 Visual representation of income vs expense and spending by category.
+<img width="1877" height="922" alt="Screenshot 2026-06-12 130020" src="https://github.com/user-attachments/assets/46034ef0-b0d7-42af-bada-6b8f657da9be" />
 
-[Dashboard Charts Screenshot]
 
 ### Add Transaction
 Simple form interface to record new income or expense transactions.
+<img width="1902" height="687" alt="Screenshot 2026-06-12 130040" src="https://github.com/user-attachments/assets/f3c723b5-de66-4e0b-90a7-0d884d7ffc84" />
 
-[Add Transaction Form Screenshot]
 
 ### Transaction List
 Browse, search, and manage all your transactions with edit and delete options.
+<img width="1892" height="921" alt="Screenshot 2026-06-12 130054" src="https://github.com/user-attachments/assets/98390795-38dc-4b84-ab29-a98a213691e0" />
 
-[All Transactions Screenshot]
 
 ### Settings and Tools
 Access data management features including export and statistics.
+<img width="1898" height="665" alt="Screenshot 2026-06-12 130108" src="https://github.com/user-attachments/assets/65181d26-dca4-49aa-b98b-6ffce65f4f01" />
 
-[Settings Page Screenshot]
 
 ## Technology Stack
 
