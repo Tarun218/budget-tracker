@@ -54,7 +54,7 @@ export default function TransactionList({
     >
       {/* Search and Filter Bar */}
       <div className="bg-white rounded-lg border-2 border-[#D9D9D9] p-4 space-y-4">
-        <div className="flex gap-2">
+        <div className="flex gap-2" style={{display: 'flex', flexDirection:'row',gap:'5px'}}>
           <div className="flex-1 relative">
             <Search className="absolute left-3 top-3 w-5 h-5 text-[#999999]" />
             <input
@@ -78,7 +78,7 @@ export default function TransactionList({
       </div>
 
       {/* Transactions Table */}
-      <div className="bg-white rounded-lg border-2 border-[#D9D9D9] overflow-hidden shadow-lg">
+      <div className="bg-white rounded-lg border-2 border-[#D9D9D9] overflow-hidden shadow-lg" >
         <div className="overflow-x-auto">
           <table className="w-full">
             <thead>
@@ -103,14 +103,14 @@ export default function TransactionList({
                 </th>
               </tr>
             </thead>
-            <tbody>
+            <tbody >
               {filteredTransactions.map((transaction, index) => (
                 <motion.tr
                   key={transaction.id}
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.05 }}
-                  className="border-b border-[#D9D9D9] hover:bg-gray-50 transition-colors"
+                  className="border-b border-[#D9D9D9] hover:bg-gray-50 transition-colors" 
                 >
                   <td className="px-6 py-4 text-sm text-[#666666]">
                     <div>{formatDate(transaction.date, 'MMM dd')}</div>
